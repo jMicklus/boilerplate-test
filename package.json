@@ -1,0 +1,56 @@
+{
+  "name": "splunk-react-boilerplate",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -fr stage",
+    "build": "yarn run clean && NODE_ENV=production webpack --bail",
+    "start": "webpack --watch",
+    "lint": "eslint src --ext \".js,.jsx\"",
+    "lint:fix": "eslint src --ext \".js, .jsx\" --fix",
+    "format": "git ls-files | grep -E \"\\.(jsx?|css)$\" | xargs prettier --write",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "tar": "tar czf app.tar.gz appserver default && mv app.tar.gz",
+    "package": "yarn run build && yarn run tar"
+  },
+  "dependencies": {
+    "@splunk/dashboard-context": "^24.3.2",
+    "@splunk/dashboard-core": "^24.3.2",
+    "@splunk/dashboard-presets": "^24.3.2",
+    "@splunk/react-time-range": "^9.1.1",
+    "@splunk/react-ui": "^4.17.1",
+    "@splunk/splunk-utils": "^2.3.4",
+    "@splunk/themes": "^0.16.1",
+    "@splunk/visualization-context": "^24.7.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "scriptjs": "^2.5.8",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
+    "babel-loader": "^8.0.4",
+    "css-loader": "5.2.7",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "jest": "^25.1.0",
+    "jest-junit": "^10.0.0",
+    "prettier": "^2.8.8",
+    "querystring-es3": "^0.2.1",
+    "react-test-renderer": "^16.12.0",
+    "style-loader": "2.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
