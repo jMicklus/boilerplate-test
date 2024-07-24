@@ -1,0 +1,21 @@
+[]
+access = read : [ * ], write : [ * ]
+export = none
+version = 9.2.2
+modtime = 1721678287.129594400
+
+[app/ui]
+version = 9.2.2
+modtime = 1721680176.609131700
+
+[app/launcher]
+version = 9.2.2
+modtime = 1721680176.637130900
+
+[app/package/check_for_updates]
+version = 9.2.2
+modtime = 1721680176.668129800
+
+[views/startPage]
+version = 9.2.2
+modtime = 1721679207.464349500

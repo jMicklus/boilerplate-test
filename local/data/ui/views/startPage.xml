@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="boilerplate-test:/templates/startPage.html" type="html">
+    <label>React-App</label>
+</view>

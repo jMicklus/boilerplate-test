@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { DashboardContextProvider } from '@splunk/dashboard-context';
-import EnterpriseViewOnlyPreset from '@splunk/dashboard-presets/EnterpriseViewOnlyPreset';
+import EnterprisePreset from '@splunk/dashboard-presets/EnterprisePreset';
 import DashboardCore from '@splunk/dashboard-core';
 import SplunkThemeProvider from '@splunk/themes/SplunkThemeProvider';
 import definition from '../dashboards/def1.json';
@@ -28,7 +28,7 @@ const Dashboard = ({ dateRange }) => {
           width="100%"
           height="100%"
           definition={definition}
-          preset={EnterpriseViewOnlyPreset}
+          preset={EnterprisePreset}
           tokenBinding={appTokenBindings}
         />
       </DashboardContextProvider>
